@@ -9,7 +9,7 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
-  line-height: 1;
+  line-height: 1.2;
   margin-top: 0;
 }
 
@@ -60,20 +60,35 @@ header {
 }
 
 header {
+  font-size: 2.4rem;
   background-image: url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   color: white;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  font-size: 2.4rem;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
   min-height: 80vh;
+}
+
+header .middle {
+  flex: 1 1 auto;
+}
+
+header .logo {
+  max-width: 300px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 header h1 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+  line-height: 1;
 }
 
 header h2 {
@@ -90,6 +105,7 @@ header h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
