@@ -60,15 +60,30 @@ header {
 }
 
 header {
+  font-size: 2.4rem;
+  min-height: 80vh;
   background-image: url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   color: white;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  font-size: 2.4rem;
-  min-height: 80vh;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header .middle {
+  flex: 1 1 auto;
+}
+
+header .logo {
+  max-width: 300px;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 header h1 {
@@ -90,6 +105,7 @@ header h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 @media (max-width: 768px) {
