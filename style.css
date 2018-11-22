@@ -39,6 +39,10 @@ section {
   align-items: center;
 }
 
+.nav a span:hover {
+  text-decoration: underline;
+}
+
 .nav a img {
   width: 15px;
   height: 15px;
@@ -225,6 +229,40 @@ header h2 {
 
 .sign-up .register-container .bubbles {
   margin-top: -6rem;
+}
+
+.sign-up-success {
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sign-up-success-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.sign-up-success-container .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  max-width: 400px;
+  padding: 24px;
+  background: white;
+  color: rgb(14, 30, 37);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(14, 30, 37, 0.16);
+}
+
+.sign-up-success-container .card h1 {
+  margin: 0;
 }
 
 .container {
