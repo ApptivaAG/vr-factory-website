@@ -27,6 +27,24 @@ section {
   padding: 2em 0;
 }
 
+.nav {
+  padding-top: 1rem;
+  color: #111;
+}
+
+.nav a {
+  color: #111;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav a img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
 header {
   background-color: black;
 }
@@ -57,24 +75,24 @@ header h2 {
   padding-bottom: 4rem;
 }
 
-.widgets {
+.widgets-container .widgets {
   display: flex;
   justify-content: center;
   margin: -1rem;
 }
 
-.widget {
+.widgets-container .widget {
   text-align: center;
   padding: 1rem;
   flex-basis: 0;
   flex: 1 1 0;
 }
 
-.widget img {
+.widgets-container .widget img {
   width: 50px;
 }
 
-.widget h2 {
+.widgets-container .widget h2 {
   color: #444;
   font-size: 21px;
   margin: 0.5rem;
@@ -106,7 +124,6 @@ header h2 {
 }
 
 .get-it-now-container {
-  /* background-color: #008FD7; */
   background: url(/images/bubbles-background.png) 50% no-repeat;
   background-size: cover;
   text-align: center;
