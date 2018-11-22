@@ -1,0 +1,266 @@
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  color: #111;
+  background-color: #f2f2f2;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  line-height: 1;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+body {
+  display: grid;
+  grid: auto 1fr auto / auto;
+  min-height: 100vh;
+}
+
+section {
+  padding: 2em 0;
+}
+
+header {
+  background-color: black;
+}
+
+header {
+  background-image: url("/images/background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  font-size: 2.4rem;
+  height: 80vh;
+}
+
+header h1 {
+  margin-top: 40vh;
+  margin-bottom: 1rem;
+}
+
+header h2 {
+  font-size: 3rem;
+}
+
+.widgets-container {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.widgets {
+  display: flex;
+  justify-content: center;
+  margin: -1rem;
+}
+
+.widget {
+  text-align: center;
+  padding: 1rem;
+  flex-basis: 0;
+  flex: 1 1 0;
+}
+
+.widget img {
+  width: 50px;
+}
+
+.widget h2 {
+  color: #444;
+  font-size: 21px;
+  margin: 0.5rem;
+  line-height: 1.38105;
+  letter-spacing: 0.011em;
+}
+
+.description {
+  font-size: 21px;
+  line-height: 1.38105;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+}
+
+.preview-container {
+  background-color: white;
+  padding-top: 7rem;
+  text-align: center;
+}
+
+.preview-container h1 {
+  color: #444;
+}
+
+.preview-container img {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  max-width: 100%;
+}
+
+.get-it-now-container {
+  /* background-color: #008FD7; */
+  background: url(/images/bubbles-background.png) 50% no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.get-it-now-container .description {
+  font-size: 35px;
+}
+
+.sign-up {
+  padding-top: 3rem;
+}
+
+.sign-up .sign-up-header {
+  margin-bottom: 12rem;
+}
+
+.sign-up .sign-up-header .logo {
+  width: 300px;
+  margin-bottom: 3rem;
+}
+
+.sign-up .register-container {
+  background-color: #1f3037;
+  color: white;
+}
+
+.sign-up .register-container .container {
+  display: flex;
+  padding-bottom: 8rem;
+}
+
+.sign-up .register-container .sign-up-form {
+  text-align: left;
+  padding-top: 6rem;
+  padding-left: 3rem;
+}
+
+.sign-up .register-container .sign-up-form h2 {
+  font-size: 2.3rem;
+  margin-bottom: 0;
+}
+
+.sign-up .register-container .sign-up-form input {
+  padding-right: 46px;
+  min-height: 100%;
+  position: static;
+  padding: 6px 11px;
+  height: 40px;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
+
+.sign-up .register-container .sign-up-form .input-affix-wrapper {
+  font-size: 14px;
+  font-variant: tabular-nums;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.65);
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.sign-up .register-container .sign-up-form .input-suffix {
+  right: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  line-height: 0;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.sign-up .register-container .sign-up-form button {
+  float: right;
+  color: #fff;
+  background-color: #008fd7;
+  border-color: #008fd7;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  height: 40px;
+}
+
+.sign-up .register-container .bubbles {
+  margin-top: -6rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  color: white;
+  background-color: #444;
+  height: 3.1rem;
+}
+
+footer a {
+  color: white;
+}
+
+.btn {
+  padding: 15px 40px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  text-shadow: none;
+  position: relative;
+  display: inline-block;
+  border: 0;
+  border-radius: 30px;
+}
+
+.btn:active {
+  transform: translate(0px, 5px);
+  -webkit-transform: translate(0px, 5px);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn-blue {
+  background-color: #008fd7;
+}
+
+.btn-blue:hover {
+  background-color: #40a9ff;
+}
+
+.btn-white {
+  background-color: white;
+  color: #444;
+}
+
+.btn-white:hover {
+  color: #008fd7;
+}
