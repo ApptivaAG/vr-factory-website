@@ -303,10 +303,17 @@ header h2 {
 footer {
   color: white;
   background-color: #444;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 footer a {
   color: white;
+  text-decoration: none;
+}
+
+footer .container {
+  padding-top: 1rem;
 }
 
 .btn {
