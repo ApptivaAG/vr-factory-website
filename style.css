@@ -157,12 +157,15 @@ header h2 {
   text-align: center;
 }
 
-.preview-container h1 {
+.preview-container h1,
+.preview-container h2 {
   color: #444;
 }
 
-.preview-container img {
+.preview-container h2 {
   margin-top: 3rem;
+}
+.preview-container img {
   margin-bottom: 3rem;
   max-width: 100%;
 }
