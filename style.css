@@ -23,6 +23,10 @@ h1 {
   }
 }
 
+small {
+  color: #888;
+}
+
 body {
   display: grid;
   grid: auto 1fr auto / auto;
@@ -154,6 +158,7 @@ header h2 {
 .preview-container {
   background-color: white;
   padding-top: 7rem;
+  padding-bottom: 6rem;
   text-align: center;
 }
 
@@ -228,6 +233,43 @@ header h2 {
   border-bottom: 15px solid transparent;
   left: -26px;
   top: 20px;
+}
+
+.blogpost {
+  display: block;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  text-align: left;
+  color: #333;
+  text-decoration: none;
+  transition: transform 0.1s;
+  overflow: hidden;
+}
+
+.blogpost img {
+  width: 100%;
+  margin: 0;
+}
+
+.blogpost .blogpost-content {
+  padding: 0 1em;
+}
+
+.blogpost:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 10px #eee;
+}
+
+.blogpost:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px #ccc;
+}
+
+.blogpost h2 {
+  margin-top: 1em;
 }
 
 .get-it-now-container {
@@ -406,6 +448,7 @@ footer .container {
   display: inline-block;
   border: 0;
   border-radius: 30px;
+  transition: transform 0.1s;
 }
 
 .btn:active {
