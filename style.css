@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   margin: 0;
   color: #111;
   background-color: #f2f2f2;
@@ -8,7 +8,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.2;
   margin-top: 0;
 }
@@ -65,7 +65,7 @@ header {
 
 header {
   font-size: 2.4rem;
-  background-image: url('/images/background.jpg');
+  background-image: url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -187,7 +187,7 @@ header h2 {
   margin: 30px auto;
   max-width: 60%;
   border-radius: 15px;
-  background: #008fd7;
+  background: #722ed1;
   color: #fff;
   padding: 20px;
   text-align: left;
@@ -205,34 +205,34 @@ header h2 {
 }
 
 .bubble-right:before {
-  content: '';
+  content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 15px solid #008fd7;
+  border-left: 15px solid #722ed1;
   border-right: 15px solid transparent;
-  border-top: 15px solid #008fd7;
+  border-top: 25px solid #722ed1;
   border-bottom: 15px solid transparent;
-  right: -26px;
-  top: 20px;
+  right: -15px;
+  top: 0;
 }
 
 .bubble-left {
   margin-left: 4em;
-  background-color: #8098a4;
+  background-color: #2f54eb;
 }
 
 .bubble-left:before {
-  content: '';
+  content: "";
   width: 0px;
   height: 0px;
   position: absolute;
   border-left: 15px solid transparent;
-  border-right: 15px solid #8098a4;
-  border-top: 15px solid #8098a4;
+  border-right: 15px solid #2f54eb;
+  border-top: 25px solid #2f54eb;
   border-bottom: 15px solid transparent;
-  left: -26px;
-  top: 20px;
+  left: -15px;
+  top: 0;
 }
 
 .blogpost {
@@ -298,19 +298,14 @@ header h2 {
   margin-bottom: 3rem;
 }
 
-.sign-up .register-container {
-  background-color: #1f3037;
-  color: white;
-}
-
 .sign-up .register-container .container {
   display: flex;
   padding-bottom: 8rem;
 }
 
 .sign-up .register-container .sign-up-form {
-  text-align: left;
-  padding-top: 6rem;
+  padding-top: 1rem;
+  max-width: 30rem;
 }
 
 @media (min-width: 769px) {
@@ -362,11 +357,15 @@ header h2 {
   color: rgba(0, 0, 0, 0.65);
 }
 
+.sign-up .register-container .sign-up-form button:hover {
+  background-color: #9254de;
+}
+
 .sign-up .register-container .sign-up-form button {
   float: right;
   color: #fff;
-  background-color: #008fd7;
-  border-color: #008fd7;
+  background-color: #722ed1;
+  border-color: #722ed1;
   padding: 0 15px;
   font-size: 16px;
   border-radius: 4px;
@@ -380,7 +379,7 @@ header h2 {
 }
 
 .sign-up-success {
-  background-image: url('/images/background.jpg');
+  background-image: url("/images/background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -461,18 +460,19 @@ footer .container {
 }
 
 .btn-blue {
-  background-color: #008fd7;
+  background-color: #722ed1;
+  border: 2px solid white;
 }
 
 .btn-blue:hover {
-  background-color: #40a9ff;
+  background-color: #9254de;
 }
 
 .btn-white {
   background-color: white;
-  color: #444;
+  color: #722ed1;
 }
 
 .btn-white:hover {
-  color: #008fd7;
+  color: #9254de;
 }
