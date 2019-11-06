@@ -6,40 +6,41 @@ layout: sign-up
 
 <main class="sign-up">
     <div class="sign-up-header container">
-        <div>
-        <a href="/en/">
-            <img class="logo" src="/images/logo.svg" alt="Bubble CMS" />
-        </a>
-        </div>
 
         <h1>Manage your Chatbot with Bubble CMS</h1>
 
         <p class="description">
-        Leave your email address and we will give you a free access to our
-        demo system.
+            Submit your contact details below and you’ll get a invitation to try Bubble CMS.
         </p>
 
         <div class="register-container">
-        <div class="sign-up-form">
-            <form
-            name="early-access"
-            action="/en/sign-up-success/"
-            method="POST"
-            netlify
-            >
-            <span class="input-affix-wrapper">
-                <input
-                placeholder="Enter your email here"
-                type="email"
-                name="email"
-                />
-                <span class="input-suffix">
-                <button type="submit"><span>Sign up</span></button>
-                </span>
-            </span>
-            </form>
-        </div>
+            <div class="sign-up-form">
+                <form name="early-access" action="/en/sign-up-success/" method="POST" netlify>
+                    <ul class="form-items">
+                        <li>
+                            <label>Name <span class="required">*</span></label><input type="text" name="name" required
+                                placeholder="Your name" />
+                        </li>
+                        <li>
+                            <label>Company <span class="required">*</span></label>
+                            <input type="text" name="company" required placeholder="The name of your company" />
+                        </li>
+                        <li>
+                            <label>Email <span class="required">*</span></label>
+                            <input type="email" required name="email" placeholder="Your email address" />
+                        </li>
+                        <li>
+                            <label>Message</label>
+                            <textarea name="message" rows="4" placeholder="Leave a message if you wish"></textarea>
+                        </li>
+                        <li>
+                            <button type="submit">
+                                <span>Request a free trial</span>
+                            </button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
     </div>
 </main>
-  
