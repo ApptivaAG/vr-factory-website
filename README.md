@@ -4,10 +4,6 @@ Kurze Beschreibung um was es bei diesem Projekt geht und was dessen Zweck ist.
 
 Wesentliche Funktionen
 
-- Funktion X
-- Funktion Y
-- Funktion Z
-
 ## Lokale Umgebung aufsetzen
 
 Dieser Abschnitt zeigt dir, wie du das Projekt für Entwicklungs- und Testzwecken auf deiner Maschine zum Laufen kriegst.
