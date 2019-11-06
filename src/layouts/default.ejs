@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= page.lang %>">
   <head>
     <%- include('partials/head') %>
   </head>
   <body>
-    <%- include('partials/header') %>
+    <%- include('partials/header-'+page.lang, {lang: page.lang}) %>
     
     <div class="content">
       <%- body %>
