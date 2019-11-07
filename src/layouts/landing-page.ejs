@@ -6,6 +6,10 @@
 </head>
 
 <body>
+  <%- include('partials/hero-'+page.lang, {lang: page.lang}) %>
+
+  <%- include('partials/widgets-'+page.lang, {lang: page.lang}) %>
+
   <%- include('partials/menu-'+page.lang, {lang: page.lang}) %>
 
   <div class="content">
