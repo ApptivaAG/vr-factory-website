@@ -1,3 +1,4 @@
 node_modules
-/public
+/public/*
 .DS_Store
+!/public/_redirects
