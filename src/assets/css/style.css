@@ -170,6 +170,10 @@ body {
   flex: 0 0 63%;
 }
 
+.preview-gif {
+  box-shadow: none !important;
+}
+
 @media (min-width: 768px) {
   .preview-container {
     text-align: center !important;
