@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<%= page.lang %>">
 
 <head>
   <%- include('partials/head') %>
 </head>
 
 <body>
-  <%- include('partials/menu') %>
+  <%- include('partials/menu-'+page.lang, {lang: page.lang}) %>
 
   <div class="content">
     <%- body %>
   </div>
 
-  <%- include('partials/footer') %>
+  <%- include('partials/footer-'+page.lang, {lang: page.lang}) %>
 </body>
 
 </html>
