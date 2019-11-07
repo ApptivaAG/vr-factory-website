@@ -2,7 +2,7 @@
 # there CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
 
 # Redirect german users to /de
-/  /de/ 302 Language=de
+/*  /de/:splat 302 Language=de
 
 # Other languages
 /  /en/ 302
