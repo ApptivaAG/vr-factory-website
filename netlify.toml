@@ -6,10 +6,3 @@
 
   # Default build command.
   command = "npm run build"
-
-[[redirects]]
-  from = "/"
-  to = "/de/"
-  status = 302
-  query = {path = ":de"}
-  conditions = {Language = ["de"]}
