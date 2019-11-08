@@ -149,6 +149,20 @@ body {
   letter-spacing: 0.011em;
 }
 
+.workflow-example {
+  padding-top: 6rem;
+  padding-bottom: 4rem;
+  margin: auto;
+  height: 100%;
+  max-width: 50%;
+}
+
+@media (max-width: 1280px) {
+  .workflow-example {
+    max-width: 90%;
+  }
+}
+
 /* Preview Section */
 
 .preview-container {
@@ -166,7 +180,8 @@ body {
   color: #888;
 }
 
-.preview-container img {
+.preview-container img,
+.workflow-example img {
   max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
