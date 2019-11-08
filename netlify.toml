@@ -11,5 +11,5 @@
   from = "/"
   to = "/de/"
   status = 302
-  query = {path = ":path"}
+  query = {path = ":de"}
   conditions = {Language = ["de"]}
