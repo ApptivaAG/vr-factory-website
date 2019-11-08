@@ -175,6 +175,7 @@ header .logo {
   /* Undo positioning of off-canvas menu */
   .main-menu {
     position: relative;
+    width: 100%;
     left: auto;
     top: auto;
     height: auto;
@@ -192,6 +193,11 @@ header .logo {
     height: auto;
     width: auto;
     background: none;
+  }
+
+  .main-menu ul li.language-switcher {
+    flex: 1;
+    text-align: right;
   }
 
   .main-menu a {
