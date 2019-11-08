@@ -138,6 +138,12 @@ body {
   max-width: 50%;
 }
 
+@media (max-width: 1280px) {
+  .workflow-example {
+    max-width: 90%;
+  }
+}
+
 /* Preview Section */
 
 .preview-container {
