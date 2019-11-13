@@ -1,7 +1,13 @@
 @font-face {
-  font-family: "Lato", "Poppins";
+  font-family: "Lato";
   font-display: auto;
-  src: url("https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:700");
+  src: url("https://fonts.googleapis.com/css?family=Lato:400,700");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-display: auto;
+  src: url("https://fonts.googleapis.com/css?family=Poppins:700");
 }
 
 body {
