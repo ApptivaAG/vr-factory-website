@@ -181,9 +181,13 @@ body {
 }
 
 .preview-container img,
-.workflow-example img {
+.workflow-example video {
   max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.workflow-example video:focus {
+  outline: none;
 }
 
 .preview-container .items {
