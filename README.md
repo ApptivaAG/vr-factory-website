@@ -44,5 +44,6 @@ layout: #Name der Layout-Datei#
 ---
 ```
 
-Das Video spielt automatisch ab, sobald ein gewisser Anteil des Videos im Viewport ist und pausiert ausserhalb des Viewports. Dies wurde mit Hilfe von `getBoundingClientRect` erreicht (sh. */src/assets/utils/play-video-in-viewport.js*)
+Das Video spielt automatisch ab, sobald ein gewisser Anteil des Videos im Viewport ist und pausiert ausserhalb des Viewports. Dies wurde mit Hilfe von `getBoundingClientRect` erreicht (sh. */src/assets/utils/play-video-in-viewport.js*).
+
 Autoplay in iOS benötigt das Video-Attribut `playsinline`
