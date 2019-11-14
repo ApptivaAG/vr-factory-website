@@ -110,10 +110,20 @@ body {
   .hero .logo-container .language-switcher {
     display: inline !important;
   }
-
+  
   .hero h2 {
     font-size: 3rem;
   }
+}
+
+.lazyload,
+.lazyloading {
+ opacity: 0;
+}
+
+.lazyloaded {
+ opacity: 1;
+ transition: opacity 300ms;
 }
 
 /* Widgets Section */
