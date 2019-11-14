@@ -515,6 +515,12 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
+  line-height: 3rem;
+  display: block;
+}
+
+.copyright {
+  margin-top: 4rem;
 }
 
 footer .container {
@@ -526,6 +532,10 @@ footer .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+  }
+
+  footer a {
+    line-height: 1.6rem;
   }
 }
 
