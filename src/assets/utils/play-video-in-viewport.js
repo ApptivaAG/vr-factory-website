@@ -25,4 +25,26 @@ window.addEventListener("scroll", function (event) {
 	} else {
 		vid.pause()
 	}
-})
+});
+
+/* set webp img as hero-background if possible */
+
+function setElementBackgroundImg(element, img1, img2){
+	let img = new Image();
+
+	img.onload = function(){
+		element.style.backgroundImage = "url("+img1+")"
+	};
+
+	img.onerror = function(){
+		element.style.backgroundImage = "url("+img2+")"
+	};
+	
+	img.src = img1;
+}
+
+setElementBackgroundImg(
+	document.getElementsByClassName("hero")[0],
+	"/images/background.webp",
+	"/images/background.jpg"
+)
