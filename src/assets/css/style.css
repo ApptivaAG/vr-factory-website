@@ -109,7 +109,7 @@ body {
   .hero .logo-container .language-switcher {
     display: inline !important;
   }
-  
+
   .hero h2 {
     font-size: 3rem;
   }
@@ -117,12 +117,12 @@ body {
 
 .lazyload,
 .lazyloading {
- opacity: 0;
+  opacity: 0;
 }
 
 .lazyloaded {
- opacity: 1;
- transition: opacity 300ms;
+  opacity: 1;
+  transition: opacity 300ms;
 }
 
 /* Widgets Section */
@@ -200,11 +200,16 @@ body {
 }
 
 .preview-container .items {
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 }
 
-.preview-container .item {
+.preview-container .item,
+.text-item {
   padding-top: 5rem;
+}
+
+.preview-container li {
+  margin: 1rem 0;
 }
 
 .preview-container .item-description {
@@ -215,6 +220,15 @@ body {
 
 .preview-container .item-image {
   flex: 0 0 63%;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.preview-container .item-image .image-description {
+  text-align: center;
+  font-size: smaller;
+  color: rgba(0, 0, 0, 0.5);
+  margin-top: 1.2rem;
 }
 
 @media (min-width: 768px) {
@@ -227,6 +241,17 @@ body {
     justify-content: space-between;
     padding-top: 7rem !important;
     margin-bottom: 3rem !important;
+  }
+
+  .preview-container .text-item {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+  }
+
+  .preview-container .text-item .item-image {
+    max-width: 80%;
   }
 
   .preview-container .item:nth-child(even) {
@@ -314,11 +339,15 @@ body {
 
 /* Blogpost Section */
 
-.blogpost-container {
+.blogpost-section {
   background-color: white;
-  text-align: left;
+  text-align: center;
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+.blogpost-container {
+  display: flex;
+  justify-content: center;
 }
 
 .blogpost-container h1 {
@@ -332,6 +361,7 @@ body {
   margin-right: auto;
   border: 1px solid #ddd;
   border-radius: 0.5rem;
+  background-color: white;
   text-align: left;
   color: #333;
   text-decoration: none;
@@ -362,9 +392,26 @@ body {
   margin-top: 1em;
 }
 
+.special-offer {
+  max-width: 100%;
+  background-color: #722ed1;
+  padding: 1rem;
+  color: #f2f2f2;
+  font-size: 14px;
+  text-align: center;
+  line-height: 150%;
+}
+
 @media (min-width: 769px) {
   .blogpost-container {
     text-align: center;
+  }
+  .blogpost-container .container {
+    margin: 0 2rem;
+  }
+  .special-offer {
+    max-width: 50%;
+    margin: auto;
   }
 }
 
