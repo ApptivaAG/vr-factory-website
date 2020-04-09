@@ -2,10 +2,10 @@
 # there CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
 
 # Redirect german users to /de
-/  /de/ 302 Language=de
+/  /de/ 302! Language=de
 
 # Other languages
-/  /en/ 302
+/  /en/ 302!
 
 # /de/* /de/404/ 404
 # /* /en/404/ 404
