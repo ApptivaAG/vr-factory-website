@@ -605,13 +605,10 @@ body {
 /* Footer Section */
 
 footer {
+  font-size: 0.8em;
   color: white;
-  background: #053177;
-  background-image: linear-gradient(
-    -225deg,
-    rgba(179, 127, 235, 0) 0%,
-    rgba(179, 127, 235, 0.5) 100%
-  );
+  background-color: rgb(0, 159, 220);
+
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
@@ -632,14 +629,29 @@ footer .container {
 }
 
 @media (min-width: 769px) {
-  footer .container {
+  footer .content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    /* align-items: flex-end; */
+  }
+
+  footer .content div {
+    padding-right: 2em;
+    flex-grow: 1;
+    flex-basis: 0;
   }
 
   footer a {
     line-height: 1.6rem;
+  }
+
+  footer .contact-details {
+    display: flex;
+    line-height: 1.6rem;
+  }
+
+  footer .copyright {
+    text-align: center;
   }
 }
 
