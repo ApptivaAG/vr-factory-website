@@ -1,14 +1,16 @@
 body {
-  font-family: "Lato", sans-serif;
   margin: 0;
-  color: #111;
   background-color: #f2f2f2;
+  font-size: 20px;
+  color: rgb(46, 46, 46);
+  font-family: Gentona, sans-serif;
+  font-weight: 300;
 }
 
 h1,
 h2,
 h3 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Gentona", sans-serif;
   line-height: 1.2;
   margin-top: 0;
 }
@@ -25,6 +27,60 @@ h3 {
   h1 {
     font-size: 3em;
   }
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-ExtraBold.woff2") format("woff2"),
+    url("/font/Gentona-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-Bold.woff2") format("woff2"),
+    url("/font/Gentona-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-Medium.woff2") format("woff2"),
+    url("/font/Gentona-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-Book.woff2") format("woff2"),
+    url("/font/Gentona-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-Light.woff2") format("woff2"),
+    url("/font/Gentona-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gentona";
+  font-display: fallback;
+  src: url("/font/Gentona-ExtraLight.woff2") format("woff2"),
+    url("/font/Gentona-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
 }
 
 small {
@@ -521,7 +577,7 @@ body {
   border: 1px solid rgb(217, 217, 217);
   border-radius: 4px;
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Gentona", sans-serif;
 }
 
 .sign-up .form-items textarea {
@@ -531,7 +587,7 @@ body {
   border: 1px solid rgb(217, 217, 217);
   border-radius: 4px;
   font-size: 1rem;
-  font-family: "Lato", sans-serif;
+  font-family: "Gentona", sans-serif;
 }
 
 .sign-up-success {

@@ -33,17 +33,3 @@ nanogen init # im Zielordner
 npm i
 npm start
 ```
-
-## Besonderheiten
-
-Um pages mit einem Layout zu verknüpfen, schreibe folgendes im page Dokument, vor dem content:
-
-```
----
-layout: #Name der Layout-Datei#
----
-```
-
-Das Video spielt automatisch ab, sobald ein gewisser Anteil des Videos im Viewport ist und pausiert ausserhalb des Viewports. Dies wurde mit Hilfe von `getBoundingClientRect` erreicht (sh. _/src/assets/utils/play-video-in-viewport.js_).
-
-Autoplay in iOS benötigt das Video-Attribut `playsinline`
