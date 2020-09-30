@@ -285,12 +285,20 @@ body {
   text-align: left;
 }
 
+@media (min-width: 768px) {
+  .offers-container {
+    text-align: center !important;
+    padding: 1em;
+  }
+}
+
 /* Cases Section */
 
 .cases-container {
   background-color: white;
   padding-top: 7rem;
   text-align: left;
+  margin-top: 20px;
 }
 
 .cases-container .items {
