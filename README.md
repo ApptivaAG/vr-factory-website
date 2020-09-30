@@ -1,6 +1,6 @@
-# Bubble CMS mit Nanogen
+# VR Factory mit Nanogen
 
-Die Website bubblecms.io auf Basis des static site generators Nanogen (https://doug2k1.github.io/nanogen/).
+Die Website vr-factory.ch auf Basis des static site generators Nanogen (https://doug2k1.github.io/nanogen/).
 
 #### Besonderheiten Nanogen:
 
@@ -44,6 +44,6 @@ layout: #Name der Layout-Datei#
 ---
 ```
 
-Das Video spielt automatisch ab, sobald ein gewisser Anteil des Videos im Viewport ist und pausiert ausserhalb des Viewports. Dies wurde mit Hilfe von `getBoundingClientRect` erreicht (sh. */src/assets/utils/play-video-in-viewport.js*).
+Das Video spielt automatisch ab, sobald ein gewisser Anteil des Videos im Viewport ist und pausiert ausserhalb des Viewports. Dies wurde mit Hilfe von `getBoundingClientRect` erreicht (sh. _/src/assets/utils/play-video-in-viewport.js_).
 
 Autoplay in iOS benötigt das Video-Attribut `playsinline`

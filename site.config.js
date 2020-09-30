@@ -4,6 +4,6 @@ module.exports = {
     outputPath: "./public"
   },
   site: {
-    title: "Bubble CMS"
+    title: "VR Factory"
   }
 };

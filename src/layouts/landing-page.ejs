@@ -2,21 +2,19 @@
 <html lang="<%= page.lang %>">
 
 <head>
-  <%- include('partials/head-'+page.lang, {lang: page.lang}) %>
+  <%- include('partials/head') %>
 </head>
 
 <body>
-  <%- include('partials/hero-'+page.lang, {lang: page.lang}) %>
+  <%- include('partials/hero') %>
 
-  <%- include('partials/widgets-'+page.lang, {lang: page.lang}) %>
-
-  <%- include('partials/menu-'+page.lang, {lang: page.lang}) %>
+  <%- include('partials/menu') %>
 
   <div class="content">
     <%- body %>
   </div>
 
-  <%- include('partials/footer-'+page.lang, {lang: page.lang}) %>
+  <%- include('partials/footer') %>
 </body>
 
 </html>
