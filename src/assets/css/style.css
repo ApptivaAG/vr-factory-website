@@ -277,13 +277,28 @@ body {
   }
 }
 
+/* Intro Section */
+
+.intro-container {
+  background-color: white;
+  padding-top: 7rem;
+  text-align: left;
+  padding: 12rem 1em;
+}
+
+@media (min-width: 768px) {
+  .intro-container {
+    text-align: center;
+  }
+}
+
 /* Offer Section */
 
 .offers-container {
   background-color: white;
   text-align: left;
   padding: 8rem 1em;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .offer ul {
@@ -367,56 +382,6 @@ body {
   .cases-container .item .item-image {
     max-width: 30%;
     padding: 20px;
-  }
-}
-
-/* Preview Section */
-
-.preview-container {
-  background-color: white;
-  padding-top: 7rem;
-  text-align: left;
-}
-
-.preview-container h1,
-.preview-container h2 {
-  color: #444;
-}
-
-.preview-container h3 {
-  color: #888;
-}
-
-.preview-container img,
-.workflow-example video {
-  max-width: 100%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.workflow-example video:focus {
-  outline: none;
-}
-
-@media (min-width: 768px) {
-  .preview-container {
-    text-align: center !important;
-  }
-
-  .preview-container .item {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 7rem !important;
-    margin-bottom: 3rem !important;
-  }
-
-  .preview-container .item:nth-child(even) {
-    flex-direction: row-reverse;
-  }
-
-  .preview-container .item-description {
-    flex: 0 0 34%;
-    padding-top: 1rem;
-    text-align: left;
   }
 }
 
