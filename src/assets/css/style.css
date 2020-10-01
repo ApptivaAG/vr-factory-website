@@ -281,8 +281,14 @@ body {
 
 .offers-container {
   background-color: white;
-  padding-top: 7rem;
   text-align: left;
+  padding: 5rem 1em;
+}
+
+.offer ul {
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .price {
@@ -292,7 +298,6 @@ body {
 @media (min-width: 768px) {
   .offers-container {
     text-align: center !important;
-    padding: 1em;
   }
   .offers {
     display: flex;
@@ -314,10 +319,6 @@ body {
 
 .cases-container .items {
   margin-bottom: 4rem;
-}
-
-.cases-container .item {
-  padding-top: 0rem;
 }
 
 .cases-container .item-description {
