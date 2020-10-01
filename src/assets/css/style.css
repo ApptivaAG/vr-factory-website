@@ -279,6 +279,18 @@ section {
   font-weight: 500;
 }
 
+/* AR and VR section */
+
+/* Cases Section */
+
+@media (min-width: 768px) {
+  .vr-and-ar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+  }
+}
+
 /* Cases Section */
 
 .cases-container .item {
