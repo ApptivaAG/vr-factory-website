@@ -280,14 +280,37 @@ body {
 
 .offers-container {
   background-color: white;
-  padding-top: 7rem;
   text-align: left;
+  padding: 8rem 1em;
+  margin-top: 2rem;
+}
+
+.offer ul {
+  text-align: left;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  flex: 1;
+}
+
+.price {
+  font-weight: bold;
+  position: relative;
+  bottom: 0px;
 }
 
 @media (min-width: 768px) {
   .offers-container {
     text-align: center !important;
-    padding: 1em;
+  }
+  .offers {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+  }
+  .offer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -302,10 +325,6 @@ body {
 
 .cases-container .items {
   margin-bottom: 4rem;
-}
-
-.cases-container .item {
-  padding-top: 5rem;
 }
 
 .cases-container .item-description {
@@ -323,12 +342,15 @@ body {
     text-align: center !important;
   }
 
+  .cases-container .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
   .cases-container .item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 7rem !important;
-    margin-bottom: 3rem !important;
   }
 
   .cases-container .item:nth-child(even) {
@@ -580,9 +602,18 @@ footer .container {
 }
 
 .call-to-action {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
+  display: inline-block;
+  padding: 0.6em 1.4em 0.7em;
+  border: 0px none;
+  border-radius: 0.1em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 159, 220);
+  transition: transform 100ms ease-out 0s;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 3rem;
 }
 
 .btn {
