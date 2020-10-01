@@ -305,6 +305,7 @@ body {
   padding-top: 2rem;
   padding-bottom: 2rem;
   flex: 1;
+  list-style-image: url(/images/checkmark.svg);
 }
 
 .price {
