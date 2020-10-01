@@ -289,6 +289,10 @@ section {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1em;
   }
+  .vr-and-ar-item {
+    background: rgb(248, 248, 248);
+    padding: 1.5em 1em;
+  }
 }
 
 /* Cases Section */
