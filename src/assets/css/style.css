@@ -303,6 +303,19 @@ section {
   }
 }
 
+/* Showcase Section */
+
+@media (min-width: 1000px) {
+  .showcase-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  .showcase-images img {
+    flex: 1;
+  }
+}
+
 /* Contact Section */
 .contact {
   background: white;
