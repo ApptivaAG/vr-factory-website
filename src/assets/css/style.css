@@ -282,17 +282,21 @@ body {
 .offers-container {
   background-color: white;
   text-align: left;
-  padding: 5rem 1em;
+  padding: 8rem 1em;
+  margin-top: 2rem;
 }
 
 .offer ul {
   text-align: left;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  flex: 1;
 }
 
 .price {
   font-weight: bold;
+  position: relative;
+  bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -302,9 +306,12 @@ body {
   .offers {
     display: flex;
     flex-direction: row;
+    align-items: stretch;
   }
   .offer {
     flex: 1;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -596,9 +603,18 @@ footer .container {
 }
 
 .call-to-action {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  text-align: center;
+  display: inline-block;
+  padding: 0.6em 1.4em 0.7em;
+  border: 0px none;
+  border-radius: 0.1em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 159, 220);
+  transition: transform 100ms ease-out 0s;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 3rem;
 }
 
 .btn {
