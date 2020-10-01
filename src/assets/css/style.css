@@ -384,125 +384,54 @@ body {
   }
 }
 
-/* Sign up Section */
-
-.sign-up {
-  padding-top: 3rem;
+/* Contact Section */
+.contact {
+  background: white;
+  padding-bottom: 4rem;
+}
+.kontakt__Grid {
+  display: grid;
+  margin-top: 4em;
+  gap: 1em;
 }
 
-.sign-up .sign-up-header {
-  margin-bottom: 12rem;
-}
-
-.sign-up .sign-up-header .logo {
-  width: 300px;
-  margin-bottom: 3rem;
-}
-
-.sign-up .register-container .container {
-  display: flex;
-  padding-bottom: 8rem;
-}
-
-.sign-up .register-container .sign-up-form {
-  padding-top: 1rem;
-  max-width: 30rem;
-}
-
-.sign-up .register-container .sign-up-form h2 {
-  font-size: 2.3rem;
-  margin-bottom: 0;
-}
-
-.sign-up .register-container .sign-up-form input {
-  padding-right: 46px;
-  min-height: 100%;
-  position: static;
-  padding: 6px 11px;
-  height: 40px;
-  font-size: 16px;
-  box-sizing: border-box;
+.kontakt__Grid p {
   margin: 0;
-  display: inline-block;
-  width: 100%;
-  border: 1px solid #d9d9d9;
-  border-radius: 4px;
+  font-size: 20px;
+}
+.kontakt__Grid a {
+  text-decoration: none;
+  color: rgb(0, 159, 220);
 }
 
-.sign-up .register-container .sign-up-form .input-affix-wrapper {
-  font-size: 14px;
-  font-variant: tabular-nums;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.65);
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-.sign-up .register-container .sign-up-form .input-suffix {
-  right: 0;
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  line-height: 0;
-  color: rgba(0, 0, 0, 0.65);
+@media (min-width: 1024px) {
+  .kontakt__Grid {
+    grid: 1fr / 1fr 2fr;
+  }
+  .kontakt__Grid form {
+    padding-left: 2em;
+    border-left: 1px solid #ddd;
+  }
 }
 
-.sign-up .register-container .sign-up-form button:hover {
-  background-color: #9254de;
-}
-
-.sign-up .register-container .sign-up-form button {
-  color: #fff;
-  background-color: #722ed1;
-  border-color: #722ed1;
-  padding: 0 15px;
-  font-size: 16px;
-  border-radius: 4px;
-  height: 40px;
-}
-
-.sign-up .form-items {
-  padding-inline-start: 0;
-}
-
-.sign-up .form-items li {
-  list-style: none;
-  padding-block-end: 1.5rem;
-}
-
-.sign-up .form-items li label {
-  padding-bottom: 0.2rem;
+.kontakt__ContactInfo {
   display: block;
+  font-size: 1.4em;
+  font-weight: 500;
+  margin-bottom: 1.4em !important;
 }
 
-.sign-up .form-items input {
+.ContactForm__Input {
+  display: block;
   width: 100%;
-  padding: 0.5rem;
-  border: 1px solid rgb(217, 217, 217);
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: "Gentona", sans-serif;
-}
-
-.sign-up .form-items textarea {
-  width: 100%;
+  padding: 0.5em;
+  margin: 0.5em 0 1em 0;
+  outline: none;
+  color: #777777;
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 2px;
   box-sizing: border-box;
-  padding: 0.5rem;
-  border: 1px solid rgb(217, 217, 217);
-  border-radius: 4px;
-  font-size: 1rem;
-  font-family: "Gentona", sans-serif;
-}
-
-.sign-up-success {
-  padding-top: 8rem;
 }
 
 .container {
@@ -566,6 +495,22 @@ footer .container {
   }
 }
 
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.4em 0.7em;
+  border: 0px none;
+  border-radius: 0.1em;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(0, 159, 220);
+  transition: transform 100ms ease-out 0s;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 3rem;
+  text-decoration: none;
+}
+
 .call-to-action {
   display: inline-block;
   padding: 0.6em 1.4em 0.7em;
@@ -584,35 +529,4 @@ footer .container {
 
 .call-to-action:hover {
   transform: scale(1.02);
-}
-
-.btn {
-  padding: 15px 40px;
-  font-size: 22px;
-  text-decoration: none;
-  margin: 20px;
-  color: #fff;
-  text-shadow: none;
-  display: inline-block;
-  border: 0;
-  border-radius: 30px;
-  transition: transform 0.1s;
-}
-
-.btn:active {
-  transform: translate(0px, 5px);
-  -webkit-transform: translate(0px, 5px);
-}
-
-.btn:focus {
-  outline: 0;
-}
-
-.btn-blue {
-  background-color: #722ed1;
-  border: 2px solid white;
-}
-
-.btn-blue:hover {
-  background-color: #9254de;
 }

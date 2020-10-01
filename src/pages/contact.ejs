@@ -1,0 +1,79 @@
+---
+title: Registrierung
+lang: de
+---
+
+<main class="contact">
+  <div class="container">
+    <h1>Kontakt</h1>
+
+    <p class="description">
+      Wir sind immer interessiert am Austausch, deshalb zögern sie nicht mit uns
+      in Kontakt zu treten.
+    </p>
+
+    <div class="kontakt__Grid">
+      <div>
+        <p>Telefon</p>
+        <a href="tel:+41413222626" class="kontakt__ContactInfo"
+          >041 322 26 26</a
+        >
+        <p>Mail</p>
+        <a href="mailto:info@apptiva.ch" class="kontakt__ContactInfo"
+          >info@apptiva.ch</a
+        >
+      </div>
+      <form
+        name="contact"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        action="/sign-up-success/"
+        method="POST"
+        netlify
+      >
+        <p hidden="">
+          <label for="bot-field"
+            >Nicht ausfüllen: <input type="text" name="bot-field" /></label
+          ><input type="text" name="subject" />
+        </p>
+        <p>
+          <label for="name"
+            >Ihr Name (Pflichtfeld)
+            <input type="text" name="name" class="ContactForm__Input" value=""
+          /></label>
+        </p>
+        <p>
+          <label for="email"
+            >Ihre Email-Adresse (Pflichtfeld)
+            <input
+              type="email"
+              name="email"
+              class="ContactForm__Input"
+              value=""
+          /></label>
+        </p>
+        <p>
+          <label for="company"
+            >Firma
+            <input
+              type="text"
+              name="company"
+              class="ContactForm__Input"
+              value=""
+          /></label>
+        </p>
+        <p>
+          <label for="message"
+            >Ihre Nachricht
+            <textarea name="message" class="ContactForm__Input"></textarea>
+          </label>
+        </p>
+        <p style="text-align: right;">
+          <button type="submit" class="btn">
+            Senden
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</main>
