@@ -142,7 +142,7 @@ body {
 }
 
 .hero .arrow {
-  margin-bottom: 1.9rem;
+  margin-bottom: 130px;
   padding: 0.5em 0.7em;
   border-radius: 50%;
   font-weight: 800;
@@ -151,6 +151,12 @@ body {
   transition: transform 30ms ease-out 0s;
   transform: translate3d(0px, 0px, 0px);
   overflow: hidden;
+}
+
+@media (min-width: 840px) {
+  .hero .arrow {
+    margin-bottom: 1.9rem;
+  }
 }
 
 .hero .arrow svg {
