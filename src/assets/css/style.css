@@ -310,8 +310,7 @@ body {
 
 .price {
   font-weight: bold;
-  position: relative;
-  bottom: 0px;
+  padding-bottom: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -580,6 +579,11 @@ footer .container {
   cursor: pointer;
   font-size: 20px;
   margin-top: 3rem;
+  text-decoration: none;
+}
+
+.call-to-action:hover {
+  transform: scale(1.02);
 }
 
 .btn {
