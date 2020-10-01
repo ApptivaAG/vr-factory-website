@@ -80,11 +80,6 @@ p {
   font-weight: 200;
   font-style: normal;
 }
-
-small {
-  color: #888;
-}
-
 .middle {
   display: flex;
   align-items: center;
@@ -223,82 +218,10 @@ body {
   }
 }
 
-.lazyload,
-.lazyloading {
-  opacity: 0;
-}
-
-.lazyloaded {
-  opacity: 1;
-  transition: opacity 300ms;
-}
-
 /* Content */
 section {
   padding-top: 2em;
   padding-bottom: 2em;
-}
-
-/* Widgets Section */
-
-.widgets-container {
-  background-color: #f2f2f2;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.widgets-container .widgets {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: -1rem;
-}
-
-.widgets-container .widget {
-  text-align: center;
-  padding: 1rem;
-  flex: 1 1 18rem;
-}
-
-.widgets-container .widget img {
-  width: 50px;
-}
-
-.widgets-container .widget h2 {
-  color: #444;
-  font-size: 21px;
-  margin: 0.5rem;
-  line-height: 1.38105;
-  letter-spacing: 0.011em;
-}
-
-.workflow-example {
-  padding-top: 6rem;
-  padding-bottom: 4rem;
-  margin: auto;
-  height: 100%;
-  max-width: 50%;
-}
-
-@media (max-width: 1280px) {
-  .workflow-example {
-    max-width: 90%;
-  }
-}
-
-/* Intro Section */
-
-.intro-container {
-  background-color: white;
-  padding-top: 7rem;
-  text-align: left;
-  padding: 12rem 1em;
-}
-
-@media (min-width: 768px) {
-  .intro-container {
-    text-align: center;
-  }
 }
 
 /* Offer Section */
@@ -437,7 +360,6 @@ footer {
 footer a {
   color: white;
   text-decoration: none;
-  line-height: 3rem;
   display: block;
 }
 
@@ -453,7 +375,6 @@ footer .container {
   footer .content {
     display: flex;
     justify-content: space-between;
-    /* align-items: flex-end; */
   }
 
   footer .content div {
