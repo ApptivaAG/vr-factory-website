@@ -27,6 +27,15 @@ p {
   font-weight: 300;
 }
 
+a {
+  color: rgb(0, 159, 220);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: "Gentona";
   font-display: fallback;
@@ -245,6 +254,12 @@ section {
   font-size: 0.9em;
   border: 1px solid rgb(0, 159, 220);
   padding: 0.5em;
+}
+
+.offer p {
+  color: rgb(0, 159, 220);
+  font-weight: 500;
+  padding: 0 0.5em;
 }
 
 .offer ul {
