@@ -1,15 +1,3 @@
-/* Screen reader only */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -17,84 +5,97 @@ header {
   border-bottom: 1px solid rgb(238, 238, 238);
 }
 
-header .container {
-  height: 86px;
+header .header__container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 960px;
+  padding-right: 1em;
+  padding-left: 1em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-header .logo {
+@media (min-width: 768px) {
+  header .header__container {
+    padding-right: 20rem;
+  }
+}
+
+header .header__logo {
   font-size: 0.8em;
   font-weight: 800;
-  margin: 1em 0px;
+  margin: 1em 0;
 }
 
-header .logo a {
+header .header__logo * {
+  margin: 0;
+  line-height: 1;
+}
+
+header .header__logo h2 {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+header .header__logo a {
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  color: rgb(46, 46, 46);
+  color: black;
   text-decoration: none;
-  width: 250px;
 }
 
-header .logo img {
+header .header__logo img {
   height: 4em;
   width: 4em;
   margin-right: 0.6em;
 }
 
-header .logo h1 {
-  font-size: 2em;
-  margin: 0px;
-  line-height: 1;
+header .header__menuButton {
+  padding: 0.5em;
+  margin-right: -0.5em;
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
 }
 
-header .logo h2 {
-  font-size: 1em;
-  font-weight: 200;
+header .header__menuButton:focus ~ .header__navigation {
+  transform: translate3d(-20rem, 0px, 0px);
+}
+header .header__menuButton:active ~ .header__navigation {
+  transform: translate3d(-20rem, 0px, 0px);
 }
 
-/* Button styling */
-.menu-toggle {
-  display: inline-block;
-  padding: 0.75em 15px;
-  line-height: 1em;
-  font-size: 1em;
+@media (min-width: 1240px) {
+  header .header__menuButton {
+    display: none;
+  }
 }
 
-/*
-   Default styles + Mobile first
-   Offscreen menu style
-  */
-.main-menu {
-  color: white;
-  position: absolute;
-  display: none;
-  left: -300px;
-  top: 0;
-  height: 100%;
-  overflow-y: auto;
-  overflow-x: visible;
-  transition: left 0.3s ease, box-shadow 0.3s ease;
-  z-index: 999;
+header .header__navigation {
+  margin-right: -1em;
 }
 
-.main-menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 2.5em 0 0;
-  /* Hide shadow w/ -8px while 'closed' */
-  -webkit-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  box-shadow: -8px 0 8px rgba(0, 0, 0, 0.5);
-  min-height: 100%;
-  width: 300px;
-  background: #1a1a1a;
+@media (max-width: 1239px) {
+  header .header__navigation {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1em;
+    top: 0;
+    bottom: 0;
+    right: -20rem;
+    padding: 1em 1em 1em 0;
+    color: white;
+    background-color: rgb(0, 143, 215);
+    transition: all 200ms ease 200ms;
+  }
 }
 
-.main-menu a {
+header .header__navigationItem {
   display: inline-block;
   font-size: 1.1em;
   font-weight: 500;
@@ -102,136 +103,24 @@ header .logo h2 {
   margin-right: 0.5em;
   padding: 0.3em 0.5em;
   color: inherit;
-  transition: transform 100ms ease-out 0s;
+  transition: transform 100ms ease-out;
   text-decoration: none;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+header .header__navigationItem:active {
+  color: white;
+}
+
+@media (min-width: 840px) {
+  header .header__navigationItem:active {
+    color: black;
+  }
+}
+
+header .header__navigationItem:hover {
   transform: scale(1.06);
 }
 
-.main-menu .menu-close {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/*
-   On small devices, allow it to toggle...
-  */
-/*
-   :target for non-JavaScript
-   [aria-expanded] will be used if/when JavaScript is added to improve interaction, though it's completely optional.
-  */
-.main-menu:target,
-.main-menu[aria-expanded="true"] {
-  display: block;
-  left: 0;
-  outline: none;
-  -moz-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.25);
-}
-
-.main-menu:target .menu-close,
-.main-menu[aria-expanded="true"] .menu-close {
-  z-index: 1001;
-}
-
-.main-menu:target ul,
-.main-menu[aria-expanded="true"] ul {
-  position: relative;
-  z-index: 1000;
-}
-
-/* 
-   We could us `.main-menu:target:after`, but
-   it wouldn't be clickable.
-  */
-.main-menu:target + .backdrop,
-.main-menu[aria-expanded="true"] + .backdrop {
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 998;
-  background: #000;
-  background: rgba(0, 0, 0, 0.85);
-  cursor: default;
-}
-
-@supports (position: fixed) {
-  .main-menu,
-  .main-menu:target + .backdrop,
-  .main-menu[aria-expanded="true"] + .backdrop {
-    position: fixed;
-  }
-}
-
-/*
-   Larger screen styling
-   Horizontal menu
-  */
-@media (min-width: 768px) {
-  header .container {
-    justify-content: flex-start;
-  }
-
-  header .logo {
-    margin-right: 2.5rem;
-  }
-
-  .menu-toggle,
-  .main-menu .menu-close {
-    display: none;
-  }
-
-  /* Undo positioning of off-canvas menu */
-  .main-menu {
-    position: relative;
-    width: 100%;
-    left: auto;
-    top: auto;
-    height: auto;
-    display: block;
-    color: rgb(46, 46, 46);
-  }
-
-  .main-menu ul {
-    display: flex;
-
-    /* Undo off-canvas styling */
-    padding: 0;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    height: auto;
-    width: auto;
-    background: none;
-  }
-
-  .main-menu ul li.language-switcher {
-    flex: 1;
-    text-align: right;
-  }
-
-  .main-menu a {
-    display: inline-block;
-    font-size: 1.1em;
-    font-weight: 500;
-    margin-left: 0.5em;
-    margin-right: 0.5em;
-    padding: 0.3em 0.5em;
-    color: inherit;
-    transition: transform 100ms ease-out 0s;
-    text-decoration: none;
-  }
-
-  .main-menu a:hover,
-  .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
-  }
+header .header__navigationItem:activeactive {
+  transform: scale(0.95);
 }
