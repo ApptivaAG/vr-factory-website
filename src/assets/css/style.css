@@ -285,10 +285,21 @@ body {
   text-align: left;
 }
 
+.price {
+  font-weight: bold;
+}
+
 @media (min-width: 768px) {
   .offers-container {
     text-align: center !important;
     padding: 1em;
+  }
+  .offers {
+    display: flex;
+    flex-direction: row;
+  }
+  .offer {
+    flex: 1;
   }
 }
 
@@ -306,7 +317,7 @@ body {
 }
 
 .cases-container .item {
-  padding-top: 5rem;
+  padding-top: 0rem;
 }
 
 .cases-container .item-description {
@@ -324,12 +335,15 @@ body {
     text-align: center !important;
   }
 
+  .cases-container .items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+  }
+
   .cases-container .item {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding-top: 7rem !important;
-    margin-bottom: 3rem !important;
   }
 
   .cases-container .item:nth-child(even) {
