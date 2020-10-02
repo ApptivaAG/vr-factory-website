@@ -291,7 +291,13 @@ section {
   }
   .vr-and-ar-item {
     background: rgb(248, 248, 248);
-    padding: 1.5em 1em;
+    padding: 1.5em;
+  }
+  .vr-and-ar-item h2 {
+    margin-top: 0;
+  }
+  .vr-and-ar-item p {
+    margin-bottom: 0;
   }
 }
 
@@ -299,8 +305,16 @@ section {
 
 .cases-container .item {
   background: rgb(248, 248, 248);
-  padding: 1.5em 1em;
+  padding: 1.5em;
   margin-bottom: 1em;
+}
+
+.cases-container .item h2 {
+  margin-top: 0;
+}
+
+.cases-container .item p {
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
