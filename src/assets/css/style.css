@@ -122,6 +122,19 @@ body {
   height: 100vh;
 }
 
+.hero-logo {
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+  max-height: 11rem;
+}
+
+@media (max-width: 1000px) {
+  .hero-logo {
+    display: none;
+  }
+}
+
 .hero .container {
   display: flex;
   flex-direction: column;
