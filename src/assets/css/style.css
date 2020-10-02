@@ -124,9 +124,10 @@ body {
 
 .hero-logo {
   position: absolute;
-  top: 5rem;
-  left: 5rem;
+  top: 3rem;
+  left: 3rem;
   max-height: 11rem;
+  width: fit-content;
 }
 
 @media (max-width: 1000px) {
