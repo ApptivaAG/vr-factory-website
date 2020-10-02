@@ -11,10 +11,12 @@
             <!-- <a-asset-item id="tree" src="/models/pollinator-bot/scene.gltf"></a-asset-item> -->
             <!-- <a-asset-item id="tree" src="/models/steampunk_underwater_explorer/scene.gltf"></a-asset-item> -->
             <a-asset-item id="tree" src="/models/adamHead/adamHead.gltf"></a-asset-item>
+            <a-asset-item id="man" src="https://scottturneruon.github.io/temp/scene.gltf"></a-asset-item>
         </a-assets>
         <a-marker type='pattern' url='/pattern-qrcode.patt'>
+            <a-entity gltf-model="#man" scale="0.1 0.1 0.1"></a-entity>
             <!-- <a-plane src="#logo" position="0 0 0" rotation="-90 0 0"></a-plane> -->
-            <a-entity gltf-model="#tree" position="0 -2 0" rotation="0 0 0"></a-entity>
+            <!-- <a-entity gltf-model="#tree" position="0 -2 0" rotation="0 0 0"></a-entity> -->
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
