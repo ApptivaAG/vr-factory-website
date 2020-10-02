@@ -5,8 +5,12 @@
 
 <body style='margin : 0px; overflow: scroll;'>
     <a-scene embedded arjs='debugUIEnabled: false; patternRatio: 0.7'>
+        <a-assets>
+            <img id="logo" src="logo.svg">
+        </a-assets>
         <a-marker type='pattern' url='/pattern-qrcode.patt'>
             <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
+            <a-image src="#logo"></a-image>
         </a-marker>
         <a-entity camera></a-entity>
     </a-scene>
