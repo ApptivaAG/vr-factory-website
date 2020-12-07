@@ -330,7 +330,7 @@ section {
 
 .cases-container .item {
   background: rgb(248, 248, 248);
-  padding: 1.5em;
+  padding: 1em;
   margin-bottom: 1em;
 }
 
@@ -423,8 +423,8 @@ section {
 
 .container {
   max-width: 1024px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
 }
