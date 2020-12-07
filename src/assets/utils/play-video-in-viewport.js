@@ -43,3 +43,6 @@ setElementBackgroundImg(
   '/images/background.webp',
   '/images/background.jpg'
 )
+
+const observer = window.lozad() // lazy loads elements with default selector as '.lozad'
+observer.observe()
