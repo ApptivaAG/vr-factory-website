@@ -39,7 +39,7 @@ function setElementBackgroundImg(element, img1, img2) {
 }
 
 setElementBackgroundImg(
-  document.getElementsByClassName('hero')[0],
+  document.getElementsByClassName('hero-backgroundimage')[0],
   '/images/background.webp',
   '/images/background.jpg'
 )
