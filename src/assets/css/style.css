@@ -415,11 +415,12 @@ section {
 
 .ContactForm__Input {
   display: block;
+  font-size: 1em;
   width: 100%;
   padding: 0.5em;
   margin: 0.5em 0 1em 0;
   outline: none;
-  color: #777777;
+  color: #444;
   background: #fff;
   border: 1px solid #e8e8e8;
   border-radius: 2px;
